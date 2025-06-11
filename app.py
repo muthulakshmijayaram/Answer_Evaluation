@@ -40,7 +40,7 @@ def extract_text_from_image(image_bytes):
     return llm.invoke([message]).content
 
 def extract_pdf_content(pdf_file):
-    images = convert_from_bytes(pdf_file.read(), poppler_path=r"C:\poppler-24.08.0\Library\bin")
+    images = convert_from_bytes(pdf_file.read())
     content = []
     for img in images:
         buf = io.BytesIO()
