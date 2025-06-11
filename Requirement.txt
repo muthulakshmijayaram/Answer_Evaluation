@@ -1,0 +1,10 @@
+streamlit
+python-docx
+pdf2image
+Pillow
+pandas
+python-dotenv
+xlsxwriter
+gen-ai-hub
+langchain
+langgraph
