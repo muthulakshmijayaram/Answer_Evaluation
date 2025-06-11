@@ -5,6 +5,6 @@ Pillow
 pandas
 python-dotenv
 xlsxwriter
-gen-ai-hub
+generative-ai-hub-sdk[all]
 langchain
 langgraph
