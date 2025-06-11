@@ -20,7 +20,11 @@ load_dotenv()
 # == SAP GenAI Configuration ==
 from dotenv import load_dotenv
 load_dotenv()
-
+Client_ID = os.getenv("AICORE_CLIENT_ID")
+Client_Secret = os.getenv("AICORE_CLIENT_SECRET")
+Auth_URL = os.getenv("AICORE_AUTH_URL")
+Resource_Group = os.getenv("AICORE_RESOURCE_GROUP")
+Base_URL = os.getenv("AICORE_BASE_URL")
 LLM_DEPLOYMENT_ID = os.getenv("LLM_DEPLOYMENT_ID")
 
 llm = ChatOpenAI(deployment_id=LLM_DEPLOYMENT_ID)
