@@ -29,7 +29,10 @@ LLM_DEPLOYMENT_ID = os.getenv("LLM_DEPLOYMENT_ID")
 
 llm = ChatOpenAI(deployment_id=LLM_DEPLOYMENT_ID)
 parser = JsonOutputParser()
-
+LANGSMITH_TRACING='true'
+LANGSMITH_ENDPOINT="https://api.smith.langchain.com"
+LANGSMITH_API_KEY="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"
+LANGSMITH_PROJECT="pr-wilted-cloakroom-38"
 # == OCR-based Image Extraction ==
 def extract_text_from_image(image_bytes):
     encoded_image = base64.b64encode(image_bytes).decode("utf-8")
